@@ -9,14 +9,14 @@ description = "TG Playground Backend"
 requires-python = ">=3.14"
 dependencies = [
     "fastapi>=0.141.1",
-    "uvicorn[standard]>=0.52.3",
-    "pydantic>=2.13.4",
+    "uvicorn[standard]>=0.54.0",
+    "pydantic>=2.13.5",
     "pydantic-settings>=2.15",
-    "sqlalchemy[asyncio]>=2.0.52",
+    "sqlalchemy[asyncio]>=2.1.1",
     "asyncpg>=0.31",
-    "alembic>=1.19.1",
+    "alembic>=1.20.0",
     "redis>=8.1",
-    "temporalio>=1.31",
+    "temporalio>=1.33",
     "structlog>=26.1",
     "httpx>=0.28.1",
 ]

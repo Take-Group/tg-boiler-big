@@ -11,14 +11,14 @@
 
 
 # --- Źródło binarki Bun (kopiowana do finalnego obrazu) ----------------------
-FROM oven/bun:1.3.14 AS bun-binary
+FROM oven/bun:1.4.2 AS bun-binary
 
 
 # --- Build frontendu: Next.js w trybie standalone ----------------------------
 # WAŻNE: katalogi robocze etapów budowania muszą być identyczne ze ścieżkami
 # w obrazie finalnym. Środowisko wirtualne uv zapisuje absolutne ścieżki
 # w shebangach, więc przeniesienie go pod inny katalog je psuje.
-FROM oven/bun:1.3.14 AS frontend-build
+FROM oven/bun:1.4.2 AS frontend-build
 
 USER root
 WORKDIR /app/frontend
@@ -36,7 +36,7 @@ RUN bun run build
 
 
 # --- Build backendu: zależności Pythona + kod aplikacji ----------------------
-FROM ghcr.io/astral-sh/uv:0.12.5-python3.14-trixie-slim AS backend-build
+FROM ghcr.io/astral-sh/uv:0.12.20-python3.14-trixie-slim AS backend-build
 
 WORKDIR /app/backend
 
@@ -52,7 +52,7 @@ RUN uv sync --frozen --no-dev
 
 
 # --- Obraz finalny: backend i frontend pod jednym supervisorem ---------------
-FROM ghcr.io/astral-sh/uv:0.12.5-python3.14-trixie-slim AS app
+FROM ghcr.io/astral-sh/uv:0.12.20-python3.14-trixie-slim AS app
 
 ENV TZ=Europe/Warsaw \
     PYTHONUNBUFFERED=1 \
@@ -114,7 +114,7 @@ USER postgres
 
 
 # --- Redis -------------------------------------------------------------------
-FROM redis:8.10.0-alpine AS redis
+FROM redis:8.10.2-alpine AS redis
 
 ENV TZ=Europe/Warsaw
 
