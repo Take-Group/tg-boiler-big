@@ -8,7 +8,7 @@ Użytkownik (2026-08-03): jeśli widzisz, że port Dockera jest zajęty — zmie
 w tym projekcie na inny, losowy, i zaktualizuj we wszystkich miejscach, gdzie
 występuje. Nie zatrzymuj cudzego kontenera.
 
-**Why:** TG Playground to boilerplate, na jego bazie powstaje kilkanaście
+**Why:** TG Boiler Big to boilerplate, na jego bazie powstaje kilkanaście
 osobnych aplikacji. Wszystkie dziedziczą porty 3000 i 8000, więc gdy działają
 równolegle na jednej maszynie, kolidują ze sobą. To stan normalny i będzie się
 powtarzać przy każdej kolejnej appce.
@@ -21,7 +21,7 @@ powtarzać przy każdej kolejnej appce.
 - Zawsze powiedz użytkownikowi, jakie porty wybrałeś.
 - Konkretny przypadek na maszynie użytkownika: projekt `pulse`
   (`~/projects/affleaders/pulse`) trzyma `127.0.0.1:3000` i `127.0.0.1:8000`.
-  Użytkownik świadomie **nie chce** zmieniać portów w samym TG Playground —
+  Użytkownik świadomie **nie chce** zmieniać portów w samym TG Boiler Big —
   reguła dotyczy aplikacji budowanych na jego bazie.
 
 Powiązane: [[docker-orchestration]]

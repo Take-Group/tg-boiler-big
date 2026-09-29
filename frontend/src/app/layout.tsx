@@ -3,8 +3,8 @@ import { Providers } from "@/components/providers";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "TG Playground",
-  description: "TG Playground Admin Panel",
+  title: "TG Boiler Big",
+  description: "TG Boiler Big Admin Panel",
 };
 
 export default function RootLayout({

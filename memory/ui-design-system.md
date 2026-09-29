@@ -1,6 +1,6 @@
 # UI Design System — Frontend
 
-Ustalone konwencje wizualne frontendu (TG Playground admin panel). Dotyczą `frontend/`.
+Ustalone konwencje wizualne frontendu (TG Boiler Big admin panel). Dotyczą `frontend/`.
 
 ## Typografia
 - Globalny font: sans stack — `"Inter", "Geist", "SF Pro Display", "SF Pro Text", "Segoe UI", system-ui, sans-serif` (zmienne `--font-sans` i `--font-heading` w `globals.css`).

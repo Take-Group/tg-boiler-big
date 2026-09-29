@@ -26,7 +26,7 @@ export function AppSidebar() {
   return (
     <Sidebar>
       <SidebarHeader className="px-4 py-4">
-        <span className="text-lg font-bold tracking-tight">TG Playground</span>
+        <span className="text-lg font-bold tracking-tight">TG Boiler Big</span>
       </SidebarHeader>
 
       <SidebarContent>

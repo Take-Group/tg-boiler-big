@@ -1,4 +1,4 @@
-# TG Playground Frontend
+# TG Boiler Big Frontend
 
 ## Stack
 
@@ -16,7 +16,7 @@
 ## Uruchomienie (jedyny wspierany sposob)
 
 ```bash
-cd tg-playground
+cd tg-boiler-big
 docker compose up --build
 ```
 

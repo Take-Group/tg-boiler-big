@@ -1,5 +1,5 @@
 # =============================================================================
-# TG Playground — jeden Dockerfile budujący całość
+# TG Boiler Big — jeden Dockerfile budujący całość
 #
 # Targety:
 #   app       — backend (API + worker + migracje) i frontend w jednym kontenerze

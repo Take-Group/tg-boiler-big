@@ -23,8 +23,6 @@ brak hot-reloadu (frontend leci na buildzie produkcyjnym, backend bez
 `--reload`), wspólne logi i wspólny restart obu warstw. Nie "poprawiaj" tego
 wracając do osobnych kontenerów bez pytania.
 
-Wolumen PostgreSQL zachował dotychczasową nazwę `tg-playground-backend_pgdata`,
-żeby scalenie stosów nie skasowało lokalnych danych deweloperskich. Nazwa jest
-myląca (sugeruje osobny stos backendu), ale zmiana oznaczałaby utratę danych.
+Wolumen PostgreSQL to `pgdata` projektu Compose (`tg-boiler-big_pgdata`).
 
 Szczegóły techniczne i pułapki: `skills/backend/docker-single-image.md`.

@@ -6,7 +6,7 @@ export default function Home() {
       <div>
         <h1 className="text-2xl font-bold tracking-tight">Dashboard</h1>
         <p className="text-muted-foreground">
-          Welcome to TG Playground admin panel.
+          Welcome to TG Boiler Big admin panel.
         </p>
       </div>
     </AdminLayout>

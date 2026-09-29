@@ -52,7 +52,7 @@ wyłącznie wewnątrz sieci Docker Compose.
 
 ### Start (jedyny wspierany sposób)
 ```bash
-cd tg-playground
+cd tg-boiler-big
 docker compose up --build
 ```
 Migracje bazy wykonają się automatycznie przed startem API.

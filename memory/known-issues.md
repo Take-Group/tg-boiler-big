@@ -94,7 +94,7 @@ systemie plików nie ma żadnej binarki Go** (zweryfikowane skanem
 
 ## Lokalny wolumen PostgreSQL z obcą historią Alembic — ROZWIĄZANE
 
-Wolumen `tg-playground-backend_pgdata` zawierał obcą rewizję Alembic
+Wolumen PostgreSQL zawierał obcą rewizję Alembic
 `478be46c25fa`, przez co `alembic upgrade head` padał z
 `Can't locate revision identified by '478be46c25fa'` (katalog
 `backend/alembic/versions/` jest pusty — jest tylko `.gitkeep`) i kontener
@@ -114,5 +114,5 @@ ze sobą, gdy działają równolegle. Na maszynie użytkownika robi to m.in. pro
 
 Nie zabijaj cudzego stacku. Pełna procedura zmiany portu jest w `AGENTS.md`
 (sekcja „Konflikty portów"), kontekst decyzji w `memory/port-conflicts.md`.
-Sam TG Playground zostaje na 3000/8000 — reguła dotyczy appek budowanych
+Sam TG Boiler Big zostaje na 3000/8000 — reguła dotyczy appek budowanych
 na jego bazie.
