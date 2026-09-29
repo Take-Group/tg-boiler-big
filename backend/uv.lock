@@ -503,7 +503,7 @@ wheels = [
 ]
 
 [[package]]
-name = "tg-playground-backend"
+name = "tg-boiler-big-backend"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [

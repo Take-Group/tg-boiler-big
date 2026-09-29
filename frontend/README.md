@@ -1,4 +1,4 @@
-# TG Playground Frontend
+# TG Boiler Big Frontend
 
 Frontend projektu działa na Next.js, React, TypeScript, Tailwind CSS i Bun.
 

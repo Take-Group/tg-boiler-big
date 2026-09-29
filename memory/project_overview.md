@@ -1,10 +1,10 @@
 ---
-name: TG Playground — cel i zasady projektu
+name: TG Boiler Big — cel i zasady projektu
 description: Boilerplate do kodowania z AI dla osób nietechnicznych. Docker-only, SOLID, max 600 linii, pytaj zamiast zgaduj.
 type: project
 ---
 
-TG Playground to boilerplate do kodowania z pomocą AI (Claude Code, Codex). Użytkownicy to osoby nietechniczne.
+TG Boiler Big to boilerplate do kodowania z pomocą AI (Claude Code, Codex). Użytkownicy to osoby nietechniczne.
 
 **Why:** Osoby nietechniczne nie wiedzą jak poruszać się po kodzie — projekt musi być idioto-odporny, dobrze zorganizowany i czytelny.
 

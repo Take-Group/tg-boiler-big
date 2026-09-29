@@ -10,12 +10,12 @@ class Settings(BaseSettings):
     )
 
     # App
-    app_name: str = "TG Playground Backend"
+    app_name: str = "TG Boiler Big Backend"
     debug: bool = False
     timezone: str = Field(default="Europe/Warsaw", validation_alias="TZ")
 
     # PostgreSQL
-    database_url: str = "postgresql+asyncpg://postgres:postgres@localhost:5432/tg_playground"
+    database_url: str = "postgresql+asyncpg://postgres:postgres@localhost:5432/tg_boiler_big"
 
     # Redis
     redis_url: str = "redis://localhost:6379/0"
@@ -23,7 +23,7 @@ class Settings(BaseSettings):
     # Temporal
     temporal_host: str = "localhost:7233"
     temporal_namespace: str = "default"
-    temporal_task_queue: str = "tg-playground"
+    temporal_task_queue: str = "tg-boiler-big"
 
     # Server
     host: str = "127.0.0.1"

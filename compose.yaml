@@ -1,4 +1,4 @@
-name: tg-playground
+name: tg-boiler-big
 
 services:
   postgres:
@@ -10,11 +10,11 @@ services:
       TZ: Europe/Warsaw
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: tg_playground
+      POSTGRES_DB: tg_boiler_big
     volumes:
       - pgdata:/var/lib/postgresql
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres -d tg_playground"]
+      test: ["CMD-SHELL", "pg_isready -U postgres -d tg_boiler_big"]
       interval: 5s
       timeout: 3s
       retries: 5
@@ -94,7 +94,7 @@ services:
       target: app
     environment:
       TZ: Europe/Warsaw
-      DATABASE_URL: postgresql+asyncpg://postgres:postgres@postgres:5432/tg_playground
+      DATABASE_URL: postgresql+asyncpg://postgres:postgres@postgres:5432/tg_boiler_big
       REDIS_URL: redis://redis:6379/0
       TEMPORAL_HOST: temporal:7233
     ports:
@@ -116,6 +116,3 @@ services:
 
 volumes:
   pgdata:
-    # Nazwa zachowana z poprzedniego układu — dzięki temu istniejące dane
-    # deweloperskie przetrwały scalenie stosów.
-    name: tg-playground-backend_pgdata

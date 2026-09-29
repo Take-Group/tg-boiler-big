@@ -1,4 +1,4 @@
-# AGENTS.md — TG Playground
+# AGENTS.md — TG Boiler Big
 
 ## Jak uruchomić projekt
 
