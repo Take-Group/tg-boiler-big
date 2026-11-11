@@ -36,7 +36,7 @@ RUN bun run build
 
 
 # --- Build backendu: zależności Pythona + kod aplikacji ----------------------
-FROM ghcr.io/astral-sh/uv:0.12.24-python3.14-trixie-slim AS backend-build
+FROM ghcr.io/astral-sh/uv:0.13.7-python3.14-trixie-slim AS backend-build
 
 WORKDIR /app/backend
 
@@ -52,7 +52,7 @@ RUN uv sync --frozen --no-dev
 
 
 # --- Obraz finalny: backend i frontend pod jednym supervisorem ---------------
-FROM ghcr.io/astral-sh/uv:0.12.24-python3.14-trixie-slim AS app
+FROM ghcr.io/astral-sh/uv:0.13.7-python3.14-trixie-slim AS app
 
 ENV TZ=Europe/Warsaw \
     PYTHONUNBUFFERED=1 \
@@ -114,7 +114,7 @@ USER postgres
 
 
 # --- Redis -------------------------------------------------------------------
-FROM redis:8.10.2-alpine AS redis
+FROM redis:8.10.3-alpine AS redis
 
 ENV TZ=Europe/Warsaw
 
